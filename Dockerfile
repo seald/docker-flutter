@@ -1,12 +1,12 @@
 # flutter docker image version from https://github.com/cirruslabs/docker-images-flutter/pkgs/container/flutter : *stable* version (no 'pre' or 'beta')
-FROM ghcr.io/cirruslabs/flutter:3.27.2
+FROM ghcr.io/cirruslabs/flutter:3.35.3
 
 # Conf
 ## Google Cloud CLI filename + hash from https://cloud.google.com/sdk/docs/downloads-versioned-archives (Linux 64-bit (x86_64) version)
 ## BUT now using the versioned file, which has the same content with a different hash. To get the hash just DL the file and compute it.
-ENV GCLOUD_TGZ="google-cloud-cli-508.0.0-linux-x86_64.tar.gz"
+ENV GCLOUD_TGZ="google-cloud-cli-534.0.0-linux-x86_64.tar.gz"
 ENV GCLOUD_TGZ_URL="https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/${GCLOUD_TGZ}"
-ENV GCLOUD_TGZ_HASH="ec7ed30d8f9c5b14ae126c08c2d18779b5823087995c7b521fcf70fd26ddf97d"
+ENV GCLOUD_TGZ_HASH="f9b8fa30d319077c34dbd30108ac2460a827a2df6c6621c75d0d0a8677ed9367"
 
 ## --- END OF VARIABLES TO CHANGE FOR UPDATE ---
 
